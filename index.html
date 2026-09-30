@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MusicHub - Music School Lesson Scheduling System</title>
+<link rel="stylesheet" href="design.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div class="app-container">
+<aside class="sidebar">
+<div class="sidebar-header">
+<i class="fas fa-music"></i>
+<h2>MusicHub</h2>
+</div>
+<nav class="sidebar-nav">
+<a href="#" class="nav-link active"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+<a href="#" class="nav-link"><i class="fas fa-user-graduate"></i> Students</a>
+<a href="#" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Teachers</a>
+<a href="#" class="nav-link"><i class="fas fa-book-open"></i> Courses</a>
+<a href="#" class="nav-link"><i class="fas fa-calendar-alt"></i> Schedules</a>
+<a href="#" class="nav-link"><i class="fas fa-music"></i> Lessons</a>
+<a href="#" class="nav-link"><i class="fas fa-bookmark"></i> Bookings</a>
+<a href="#" class="nav-link"><i class="fas fa-credit-card"></i> Payments</a>
+<a href="#" class="nav-link"><i class="fas fa-chart-bar"></i> Reports</a>
+<div class="nav-divider"></div>
+<a href="#" class="nav-link"><i class="fas fa-cog"></i> Settings</a>
+<a href="#" class="nav-link"><i class="fas fa-sign-out-alt"></i> Logout</a>
+</nav>
+</aside>
+
+<main class="main-content">
+<header class="top-header">
+<div class="header-left">
+<h1>MUSIC SCHOOL LESSON SCHEDULING SYSTEM MANAGEMENT</h1>
+<p>Learn • Practice • Grow</p>
+</div>
+<div class="header-right">
+<div class="search-box">
+<input type="text" placeholder="Search...">
+<i class="fas fa-search"></i>
+</div>
+<div class="header-icons">
+<a href="#" class="icon-link"><i class="fas fa-bell"></i><span class="badge">3</span></a>
+<div class="user-dropdown">
+<i class="fas fa-user-circle"></i>
+<span>Admin</span>
+<i class="fas fa-chevron-down"></i>
+</div>
+</div>
+</header>
+
+<div class="dashboard-grid">
+<div class="card welcome-card">
+<div class="welcome-text">
+<h2>Welcome back, Admin!</h2>
+<p>Here's what's happening in your music school today.</p>
+<button class="date-btn"><i class="fas fa-calendar"></i> September 17, 2025</button>
+</div>
+<div class="welcome-img"></div>
+</div>
+
+<div class="card stats-card">
+<h3>Quick Stats</h3>
+<div class="stats-grid">
+<div class="stat-box blue">
+<i class="fas fa-users"></i>
+<div>
+<h4>120</h4>
+<p>Total Students</p>
+</div>
+</div>
+<div class="stat-box purple">
+<i class="fas fa-user"></i>
+<div>
+<h4>15</h4>
+<p>Total Teachers</p>
+</div>
+</div>
+<div class="stat-box green">
+<i class="fas fa-calendar-check"></i>
+<div>
+<h4>28</h4>
+<p>Today's Lessons</p>
+</div>
+</div>
+<div class="stat-box orange">
+<i class="fas fa-clock"></i>
+<div>
+<h4>8</h4>
+<p>Pending Bookings</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="card upcoming-card">
+<div class="card-header">
+<h3>Upcoming Lessons</h3>
+<a href="#" class="view-link">View All</a>
+</div>
+<ul class="lesson-list">
+<li>
+<div class="lesson-time">10:00<br>AM</div>
+<div class="lesson-icon"><i class="fas fa-music"></i></div>
+<div class="lesson-info">
+<h4>Piano Lesson</h4>
+<p>Student: Alex • Teacher: Mr. Cruz</p>
+</div>
+<span class="status confirmed">Confirmed</span>
+</li>
+<li>
+<div class="lesson-time">11:30<br>AM</div>
+<div class="lesson-icon"><i class="fas fa-guitar"></i></div>
+<div class="lesson-info">
+<h4>Guitar Lesson</h4>
+<p>Student: Jamie • Teacher: Ms. Reyes</p>
+</div>
+<span class="status confirmed">Confirmed</span>
+</li>
+<li>
+<div class="lesson-time">2:00<br>PM</div>
+<div class="lesson-icon"><i class="fas fa-drum"></i></div>
+<div class="lesson-info">
+<h4>Drums Lesson</h4>
+<p>Student: Taylor • Teacher: Mr. Santos</p>
+</div>
+<span class="status pending">Pending</span>
+</li>
+<li>
+<div class="lesson-time">3:30<br>PM</div>
+<div class="lesson-icon"><i class="fas fa-violin"></i></div>
+<div class="lesson-info">
+<h4>Violin Lesson</h4>
+<p>Student: Aira • Teacher: Ms. Lim</p>
+</div>
+<span class="status confirmed">Confirmed</span>
+</li>
+</ul>
+</div>
+
+<div class="card students-card">
+<div class="card-header">
+<h3>Students</h3>
+<a href="#" class="view-link">View All</a>
+</div>
+<table class="data-table">
+<thead>
+<tr><th>ID</th><th>Name</th><th>Course</th><th>Status</th></tr>
+</thead>
+<tbody>
+<tr><td>ST-001</td><td>Alex Rivera</td><td>Piano</td><td><span class="badge-active">Active</span></td></tr>
+<tr><td>ST-002</td><td>Jamie Santos</td><td>Guitar</td><td><span class="badge-active">Active</span></td></tr>
+<tr><td>ST-003</td><td>Taylor Cruz</td><td>Drums</td><td><span class="badge-active">Active</span></td></tr>
+<tr><td>ST-004</td><td>Aira Lopez</td><td>Violin</td><td><span class="badge-active">Active</span></td></tr>
+<tr><td>ST-005</td><td>Ethan Reyes</td><td>Voice</td><td><span class="badge-active">Active</span></td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="card teachers-card">
+<div class="card-header">
+<h3>Teachers</h3>
+<a href="#" class="view-link">View All</a>
+</div>
+<table class="data-table">
+<thead>
+<tr><th>ID</th><th>Name</th><th>Specialization</th><th>Status</th></tr>
+</thead>
+<tbody>
+<tr><td>T-001</td><td>Mr. Cruz</td><td>Piano</td><td><span class="badge-active">Active</span></td></tr>
+<tr><td>T-002</td><td>Ms. Reyes</td><td>Guitar</td><td><span class="badge-active">Active</span></td></tr>
+<tr><td>T-003</td><td>Mr. Santos</td><td>Drums</td><td><span class="badge-active">Active</span></td></tr>
+<tr><td>T-004</td><td>Ms. Lim</td><td>Violin</td><td><span class="badge-active">Active</span></td></tr>
+<tr><td>T-005</td><td>Mr. Garcia</td><td>Voice</td><td><span class="badge-active">Active</span></td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="card bookings-card">
+<div class="card-header">
+<h3>Recent Bookings</h3>
+<a href="#" class="view-link">View All</a>
+</div>
+<table class="data-table">
+<thead>
+<tr><th>ID</th><th>Student</th><th>Lesson</th><th>Date</th><th>Status</th></tr>
+</thead>
+<tbody>
+<tr><td>BK-001</td><td>Alex Rivera</td><td>Piano</td><td>Sep 17, 2025</td><td><span class="status confirmed">Confirmed</span></td></tr>
+<tr><td>BK-002</td><td>Jamie Santos</td><td>Guitar</td><td>Sep 17, 2025</td><td><span class="status confirmed">Confirmed</span></td></tr>
+<tr><td>BK-003</td><td>Taylor Cruz</td><td>Drums</td><td>Sep 18, 2025</td><td><span class="status pending">Pending</span></td></tr>
+<tr><td>BK-004</td><td>Aira Lopez</td><td>Violin</td><td>Sep 18, 2025</td><td><span class="status confirmed">Confirmed</span></td></tr>
+<tr><td>BK-005</td><td>Ethan Reyes</td><td>Voice</td><td>Sep 19, 2025</td><td><span class="status pending">Pending</span></td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="card courses-card">
+<div class="card-header">
+<h3>Course Management</h3>
+<a href="#" class="view-link">View All</a>
+</div>
+<table class="data-table">
+<thead>
+<tr><th>ID</th><th>Course Name</th><th>Instrument</th><th>Fee</th></tr>
+</thead>
+<tbody>
+<tr><td>C-001</td><td>Piano Basics</td><td>Piano</td><td>$40.00</td></tr>
+<tr><td>C-002</td><td>Guitar for Beginners</td><td>Guitar</td><td>$35.00</td></tr>
+<tr><td>C-003</td><td>Drums Lessons</td><td>Drums</td><td>$35.00</td></tr>
+<tr><td>C-004</td><td>Violin Essentials</td><td>Violin</td><td>$45.00</td></tr>
+<tr><td>C-005</td><td>Vocal Training</td><td>Voice</td><td>$40.00</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="card schedule-card">
+<div class="card-header">
+<h3>Monthly Schedule</h3>
+<a href="#" class="view-link">View Calendar</a>
+</div>
+<div class="calendar-days">
+<span>Mon</span><span>Tue</span><span class="active">Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+<span>15</span><span>16</span><span class="active">17</span><span>18</span><span>19</span><span>20</span><span>21</span>
+</div>
+<ul class="schedule-list">
+<li>
+<div class="sched-time">8:00 AM</div>
+<div class="sched-icon"><i class="fas fa-music"></i></div>
+<div class="sched-info">Piano Lesson (Alex Rivera)</div>
+<span class="status confirmed">Confirmed</span>
+</li>
+<li>
+<div class="sched-time">10:00 AM</div>
+<div class="sched-icon"><i class="fas fa-guitar"></i></div>
+<div class="sched-info">Guitar Lesson (Jamie Santos)</div>
+<span class="status confirmed">Confirmed</span>
+</li>
+<li>
+<div class="sched-time">2:00 PM</div>
+<div class="sched-icon"><i class="fas fa-drum"></i></div>
+<div class="sched-info">Drums Lesson (Taylor Cruz)</div>
+<span class="status pending">Pending</span>
+</li>
+<li>
+<div class="sched-time">3:30 PM</div>
+<div class="sched-icon"><i class="fas fa-violin"></i></div>
+<div class="sched-info">Violin Lesson (Aira Lopez)</div>
+<span class="status confirmed">Confirmed</span>
+</li>
+</ul>
+</div>
+
+<div class="card system-card">
+<div class="card-header">
+<h3>System Information</h3>
+<a href="#" class="view-link">View Details</a>
+</div>
+<ul class="system-list">
+<li><strong>System Name:</strong> Music School Lesson Scheduling System</li>
+<li><strong>Version:</strong> v1.0.0</li>
+<li><strong>Database:</strong> MySQL</li>
+<li><strong>Server:</strong> XAMPP (Local)</li>
+<li><strong>Environment:</strong> Development</li>
+</ul>
+<div class="system-logo">
+<i class="fas fa-music"></i>
+<h4>MusicHub</h4>
+<p>Better Musicians<br>Brighter Futures</p>
+</div>
+</div>
+</div>
+</main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
